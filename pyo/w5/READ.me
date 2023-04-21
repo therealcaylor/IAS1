@@ -1,5 +1,23 @@
 1 - Write a script that reads n frequency values (in Hertz) from a list of numbers.
 Creates n sinusoids, each with one frequency from the list and Plays all the sinusoids simultaneously
 
-2- # Reads n “notes” from a list of tuples (each tuple is made by two numbers: frequency in Hertz, duration in seconds).Plays the melody of the n notes using sinusoids (each note starts immediately after the previous one).Hint: check the documentation of the out() method in the Sine class, particularly its optional arguments
+2- Reads n “notes” from a list of tuples (each tuple is made by two numbers: frequency in Hertz, duration in seconds).Plays the melody of the n notes using sinusoids (each note starts immediately after the previous one).Hint: check the documentation of the out() method in the Sine class, particularly its optional arguments
+
+4- Creates a sinusoid with the following properties:
+- oscillating around the value 1 (rather than 0).
+-  with amplitude controllable through ctrl(), between ±0.1 and ±0.8 around 1.
+- with frequency in the range [1-10] Hz.
+Creates and play a signal which is the product a sinusoid (oscillating at audio rates) and the previous one.
+Plots waveform and spectrum of this signal. Note: this should produce an “amplitude-modulation” effect.
+
+5- Write a script that:
+Defines a list of frequencies and a list of amplitudes for the first 20 harmonic components of a triangular wave.
+Creates the corresponding sinusoidal components through a polyphonic Sine object.
+Mix down the components to a mono signal x.
+Plot waveform and spectrum of x.
+Pans x to 2 channels and plays it.
+Note: for a triangular waveform, frequency and amplitude of the kth harmonic are
+fk = (2k+1)f0 
+ak= (-1)^(k-1) /(2k+1)^2
+
 
