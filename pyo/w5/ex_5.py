@@ -14,9 +14,9 @@ from mypyoinit import *
 freq = 200 # Sets fundamental frequency
 high = 20 # Sets the highest harmonic
 
-# List of (odd) harmonic frequencies
+# List of harmonic frequencies
 harms = [freq * (2*k+1) for k in range(0, high)]
-# List of (odd) harmonic amplitudes: (-1)^(k-1) / (2k+1)^2
+# List of harmonic amplitudes: (-1)^(k-1) / (2k+1)^2
 amps = [0.33 *(-1)**(k-1) / ((2*k+1)**2) for k in range(0, high)]
 
 print(harms)
